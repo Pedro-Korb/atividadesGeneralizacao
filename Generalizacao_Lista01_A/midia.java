@@ -1,0 +1,35 @@
+
+public class midia extends item{
+	
+	private String gravadora;
+	private float duracao;
+	
+	
+	public String getGravadora() {
+		return gravadora;
+	}
+	public void setGravadora(String gravadora) {
+		if (gravadora.length() > 0)
+			this.gravadora = gravadora;
+	}
+	public float getDuracao() {
+		return duracao;
+	}
+	public void setDuracao(float duracao) {
+		if (duracao > 0)
+			this.duracao = duracao;
+	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("midia [gravadora=");
+		builder.append(gravadora);
+		builder.append(", duracao=");
+		builder.append(duracao);
+		builder.append(", toString()=");
+		builder.append(super.toString());
+		builder.append("]");
+		return builder.toString();
+	}
+	
+}
